@@ -6,11 +6,11 @@
   <remote fetch="git://github.com/01org/" name="meta-security-isafw"/>
 
   <project name="poky" remote="yocto" revision="pyro"/>
-  <project name="meta-virtualization" remote="yocto" revision="pyro"/>
-  <project name="meta-openembedded" remote="oe" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"/>
+  <project name="meta-virtualization" remote="yocto" revision="pyro" path="poky/meta-virtualization"/>
+  <project name="meta-openembedded" remote="oe" revision="pyro" path="poky/meta-openembedded"/>
 
-  <project name="meta-intel" remote="yocto" revision="pyro"/>
-  <project name="meta-intel-contrib" remote="yocto" revision="anujm/pyro"/>
+  <project name="meta-intel" remote="yocto" revision="pyro" path="poky/meta-intel"/>
+  <project name="meta-intel-contrib" remote="yocto" revision="anujm/pyro" path="poky/meta-intel-contrib"/>
 
-  <project name="meta-security-isafw" remote="meta-security-isafw" revision="master"/>
+  <project name="meta-security-isafw" remote="meta-security-isafw" revision="master" path="poky/meta-security-isafw"/>
 </manifest>
