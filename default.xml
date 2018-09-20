@@ -6,6 +6,7 @@
   <remote fetch="git://github.com/01org/" name="meta-security-isafw"/>
   <remote fetch="https://github.com/VCTLabs" name="meta-vct"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
+  <remote fetch="https://github.com/mendersoftware" name="meta-mender"/>
 
   <project name="poky" remote="yocto" revision="sumo"/>
   <project name="meta-virtualization" remote="yocto" revision="sumo" path="poky/meta-virtualization"/>
@@ -14,7 +15,8 @@
   <project name="meta-intel" remote="yocto" revision="sumo" path="poky/meta-intel"/>
   <project name="meta-intel-contrib" remote="yocto" revision="anujm/sumo" path="poky/meta-intel-contrib"/>
 
+  <project name="meta-mender" remote="meta-mender" revision="sumo" path="poky/meta-mender"/>
   <project name="meta-security-isafw" remote="meta-security-isafw" revision="master" path="poky/meta-security-isafw"/>
-  <project remote="meta-vct" revision="rocko" name="meta-printing" path="poky/meta-printing"/>
-  <project remote="meta-qt5" revision="sumo-next" name="meta-qt5" path="poky/meta-qt5"/>
+  <project name="meta-printing" remote="meta-vct" revision="rocko" path="poky/meta-printing"/>
+  <project name="meta-qt5" remote="meta-qt5" revision="sumo-next" path="poky/meta-qt5"/>
 </manifest>
