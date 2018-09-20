@@ -4,6 +4,8 @@
   <remote fetch="https://git.yoctoproject.org/git/" name="yocto"/>
   <remote fetch="git://git.openembedded.org/" name="oe"/>
   <remote fetch="git://github.com/01org/" name="meta-security-isafw"/>
+  <remote fetch="https://github.com/VCTLabs" name="meta-vct"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
 
   <project name="poky" remote="yocto" revision="sumo"/>
   <project name="meta-virtualization" remote="yocto" revision="sumo" path="poky/meta-virtualization"/>
@@ -13,4 +15,6 @@
   <project name="meta-intel-contrib" remote="yocto" revision="anujm/sumo" path="poky/meta-intel-contrib"/>
 
   <project name="meta-security-isafw" remote="meta-security-isafw" revision="master" path="poky/meta-security-isafw"/>
+  <project remote="meta-vct" revision="rocko" name="meta-printing" path="poky/meta-printing"/>
+  <project remote="meta-qt5" revision="sumo-next" name="meta-qt5" path="poky/meta-qt5"/>
 </manifest>

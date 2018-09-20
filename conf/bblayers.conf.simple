@@ -1,0 +1,18 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  /home/user/foss-intel-bsp/poky/meta \
+  /home/user/foss-intel-bsp/poky/meta-poky \
+  /home/user/foss-intel-bsp/poky/meta-intel \
+  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-oe \
+  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-filesystems \
+  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-networking \
+  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-initramfs \
+  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-python \
+  /home/user/foss-intel-bsp/poky/meta-security-isafw \
+  "
