@@ -1,3 +1,5 @@
+# enable musl (untested)
+#TCLIBC = "musl"
 
 #MACHINE = "intel-core2-32"
 MACHINE = "intel-corei7-64"
@@ -5,13 +7,17 @@ MACHINE = "intel-corei7-64"
 DISTRO ?= "poky"
 PACKAGE_CLASSES ?= "package_ipk"
 
+#IMAGE_INSTALL_append = " qtbase qtbase-plugins cinematicexperience liberation-fonts"
+#PACKAGECONFIG_FONTS_append_pn-qtbase = " fontconfig"
+#PACKAGECONFIG_DISTRO_pn-qtbase = "accessibility"
+
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks tools-testapps"
 
 USER_CLASSES ?= "buildstats image-mklibs image-prelink"
 
-DL_DIR = "/home/user/shared/downloads"
-SSTATE_DIR = "/home/user/shared/poky/sstate-cache"
-PERSISTENT_DIR = "/home/user/shared/poky"
+DL_DIR = "/home/sarnold/shared/downloads"
+SSTATE_DIR = "/home/sarnold/shared/poky/sstate-cache"
+PERSISTENT_DIR = "/home/sarnold/shared/poky"
 
 INHERIT += "rm_work"
 INHERIT += "toaster"

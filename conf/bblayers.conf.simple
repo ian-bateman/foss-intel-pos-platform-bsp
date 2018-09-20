@@ -6,13 +6,15 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  /home/user/foss-intel-bsp/poky/meta \
-  /home/user/foss-intel-bsp/poky/meta-poky \
-  /home/user/foss-intel-bsp/poky/meta-intel \
-  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-oe \
-  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-filesystems \
-  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-networking \
-  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-initramfs \
-  /home/user/foss-intel-bsp/poky/meta-openembedded/meta-python \
-  /home/user/foss-intel-bsp/poky/meta-security-isafw \
+  /home/sarnold/android/foss-intel-bsp/poky/meta \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-poky \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-intel \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-openembedded/meta-oe \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-openembedded/meta-filesystems \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-openembedded/meta-networking \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-openembedded/meta-initramfs \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-openembedded/meta-python \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-printing \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-qt5 \
+  /home/sarnold/android/foss-intel-bsp/poky/meta-security-isafw \
   "
