@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- External projects -->
+  <remote fetch="https://git.yoctoproject.org/git/" name="yocto"/>
+  <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="git://github.com/jiazhang0/" name="security-extra"/>
+  <remote fetch="git://github.com/01org/" name="meta-security-isafw"/>
+  <remote fetch="https://github.com/OSSystems" name="oss"/>
+  <remote fetch="https://github.com/VCTLabs" name="meta-vct"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
+  <remote fetch="https://github.com/mendersoftware" name="meta-mender"/>
+
+  <project name="poky" remote="yocto" revision="thud"/>
+  <project name="meta-openembedded" remote="oe" revision="thud" path="poky/meta-openembedded"/>
+  <project name="meta-realtime" remote="yocto" revision="thud" path="poky/meta-realtime"/>
+  <project name="meta-secure-core" remote="security-extra" revision="thud" path="poky/meta-secure-core"/>
+  <project name="meta-security" remote="yocto" revision="thud" path="poky/meta-security"/>
+  <project name="meta-selinux" remote="yocto" revision="master" path="poky/meta-selinux"/>
+
+  <project name="meta-virtualization" remote="yocto" revision="thud" path="poky/meta-virtualization"/>
+  <project name="yocto-kernel-cache" remote="yocto" revision="yocto-4.18" path="poky/yocto-kernel-cache"/>
+
+  <project name="meta-browser" remote="oss" revision="master" path="poky/meta-browser"/>
+  <project name="meta-mender" remote="meta-mender" revision="thud" path="poky/meta-mender"/>
+  <project name="meta-printing" remote="meta-vct" revision="thud" path="poky/meta-printing"/>
+  <project name="meta-qt5" remote="meta-qt5" revision="thud" path="poky/meta-qt5"/>
+  <project name="meta-security-isafw" remote="meta-security-isafw" revision="master" path="poky/meta-security-isafw"/>
+</manifest>
