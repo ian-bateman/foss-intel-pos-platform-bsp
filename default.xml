@@ -22,7 +22,7 @@
 
   <project name="meta-browser" remote="oss" revision="master" path="poky/meta-browser"/>
   <project name="meta-mender" remote="meta-mender" revision="thud" path="poky/meta-mender"/>
-  <project name="meta-printing" remote="meta-vct" revision="thud" path="poky/meta-printing"/>
+  <project name="meta-printing" remote="meta-vct" revision="sumo" path="poky/meta-printing"/>
   <project name="meta-qt5" remote="meta-qt5" revision="thud" path="poky/meta-qt5"/>
   <project name="meta-security-isafw" remote="meta-security-isafw" revision="master" path="poky/meta-security-isafw"/>
 </manifest>
